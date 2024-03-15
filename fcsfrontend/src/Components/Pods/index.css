@@ -1,0 +1,100 @@
+.hirepod-bg{
+    background: linear-gradient(#000028,#099);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pod-top-heading{
+    color: #fff !important;
+    font-family: Arial Regular;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: dotted #000028 !important;
+    font-size: 35px;
+}
+
+.pod-description{
+    color: #fff;
+    text-align: center;
+    font-family: Arial Light Regular;
+    /* word-wrap: break-word; */
+}
+
+.pod-button{
+    color: #fff;
+    background-color: transparent;
+    border-color: aqua;
+    border-radius: 8px;
+    padding: 8px;
+    border-width: 2px;
+    width: fit-content;
+}
+.hirepod-sub-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    /* padding-left: 50px;
+    padding-right: 15px; */
+}
+.hirepod-container {
+    background-image: url('../images/pods/pod1.png');
+    height: 400px;
+    width: 100%;
+    background-size: 100% 100%; /* Adjusted to cover the entire container */
+    background-repeat: no-repeat; /* Ensures the background image is not repeated */
+    
+     
+    /* Add other styles as needed */
+  }
+  
+
+.hire-pod-botcon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px; /* Increase margin for more space around the container */
+    padding: 20px; /* Increase padding for inner content spacing */
+    background-color: transparent; /* Add a background color for better visibility */
+    border-radius: 10px; /* Add rounded corners for a nicer look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.botsub-con{
+    display: flex;
+    flex-direction: column;
+}
+
+.pod-mid-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pod-second-container-image{
+    height: 450px;
+    width: 450px;
+}
+
+.pods-content-container{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+
+@media (max-width: 767px) {
+    .hire-pod-botcon {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hire-pod-botcon div {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }

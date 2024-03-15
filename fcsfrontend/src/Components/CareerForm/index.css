@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+.form-container {
+  background-color: #fff;
+  padding-top: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+  .form-row {
+    flex-basis: calc(50% - 10px);
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    margin-top: 30px;
+    padding-top: 10px;
+
+  }
+  
+  /* Style the form fields and labels */
+  .form-container div {
+    margin-bottom: 15px;
+  }
+  
+  .form-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-container input,
+  .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style the submit button */
+  .form-container button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add media query for responsiveness */
+  @media screen and (max-width: 600px) {
+    .form-container {
+      max-width: 100%;
+    }
+  }
+/* .bootstraplabel{
+    width:100%;
+    text-align:left;
+    font-weight:"bold"
+}
+
+.heading{
+    font-family:"Roboto";
+    font-weight:"bold";
+    color: #000028 !important;
+    text-align:center;
+    margin-bottom:10px;
+}
+.formContainer{
+    border:3px solid aqua;
+    padding:10px;
+    width:90%;
+}
+
+.totalContainer{
+    font-family:"Roboto";
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content:center;
+    min-height:100vh;
+}
+
+.form-button{
+    background-color: #000028 !important;
+} */
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-basis: 100%;
+  }
+}

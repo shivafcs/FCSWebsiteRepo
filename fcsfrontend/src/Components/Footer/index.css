@@ -1,0 +1,184 @@
+.fcs-footer-bg {
+  background-color: #000028;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+.Heading-footer {
+  color: #fff;
+  font-family: Arial Regular;
+}
+.Heading-footer-bottom {
+  color: #fff;
+  font-size: 10px;
+  font-family: Arial Regular;
+}
+.Heading-footer-fcs {
+  color: aqua;
+  font-family: Arial Regular;
+}
+.Heading-footer-fcs:hover {
+  text-decoration: underline aqua;
+}
+
+.Heading-footer:hover {
+  text-decoration: underline #fff;
+}
+
+.fcs-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: space-around;
+  width: 80%;
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
+}
+.fcs-footer-bottom-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-around;
+    width: 20%;
+  }
+
+
+
+.line {
+  color: #fff;
+  width: 95%;
+}
+.portfolio-list{
+    list-style-type: none;
+    padding: 0;
+    
+}
+.portfolio-list-contact{
+    list-style-type: none;
+    padding: 0;
+    
+}
+.fcs-footer-icons-linkdin, .fcs-footer-icons-youtube, .fcs-footer-icons-insta, 
+.fcs-footer-icons-facebook, .fcs-footer-icons-twitter{
+  color: #fff;
+  background-color: transparent;
+  margin: 5px;
+  padding: 0px;
+  height: 30px;
+  width: 30px;
+}
+
+.fcs-footer-icons-youtube:hover{
+  border-radius: 20px;
+  color: rgb(255, 0, 0);
+  background-color:white;
+}
+
+.fcs-footer-icons-linkdin:hover{
+  border-radius: 20px;
+  color: rgb(0, 213, 255);
+  background-color:white;
+}
+
+.fcs-footer-icons-insta:hover{
+  border-radius: 20px;
+  color: rgb(255, 0, 68);
+  background-color:white;
+}
+.fcs-footer-icons-facebook:hover{
+  border-radius: 20px;
+  color: blue;
+  background-color:white;
+}
+
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .portfolio-list {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .Heading-footer {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  .arrow-icon {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+  }
+  .fcs-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-around;
+    width: 80%;
+  }
+  .fcs-footer-bottom-line {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: space-around;
+      width: 80%;
+    }
+
+  .arrow-icon.rotate {
+    transform: rotate(180deg);
+  }
+
+  .Heading-footer:hover .arrow-icon {
+    transform: rotate(180deg);
+  }
+
+  .Heading-footer:hover + .portfolio-list {
+    display: block;
+    max-height: 200px;
+    position: absolute;
+    background-color: #000028;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+}
+
+/* For screens larger than 768px */
+/* For screens larger than 768px, display the list */
+@media screen and (min-width: 769px) {
+  .portfolio-list {
+    display: block !important; /* Important to override other styles on larger screens */
+    max-height: none;
+  }
+}
+
+/* Hide the list by default */
+.portfolio-list {
+  display: none;
+}
+
+/* Show the list for mobile devices when the 'show' class is applied */
+.portfolio-list.show {
+  display: block;
+}
+
+/* Add your existing styles */
+
+.custom-link-footer {
+  color: white; /* Set the text color for the link */
+  text-decoration: none; /* Remove the default underline */
+  transition: text-decoration 0.3s ease; /* Add a smooth transition for the underline effect */
+  font-family: Arial Regular;
+}
+
+.custom-link-footer:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: #fff;
+}

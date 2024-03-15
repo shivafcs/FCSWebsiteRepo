@@ -1,0 +1,207 @@
+.Dm-main-container{
+    background-color: #fff!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dm-card-content-container{
+    background-color: #000028;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+}
+.dm-top-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.dm-button {
+    width :fit-content;
+    font-family: Arial Regular;
+    font-size: 20px;
+    font-weight:  bold;
+    margin: 15px;
+    margin-top: 25px;
+    padding: 5px;
+    border: 2px solid rgb(233, 231, 231);
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+    ) 1;
+    border-image-slice: 1; /* Add margin for spacing */
+  }
+
+.dm-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    height: 500px;
+    padding-top: 10px; 
+    margin: 5px; /* Adjusted margin for better spacing */
+    border-radius: 8px;
+    border: 2px solid rgb(233, 231, 231);
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+    ) 1;
+    border-image-slice: 1;
+}
+
+.dm-cards-heading{
+    color: aqua;
+    font-family: Arial Regular;
+    text-align: center;
+    padding-top: 10px;
+
+}
+.dm-cards-paragraph{
+    color: #fff;
+    font-family: Arial Regular;
+    text-align: center;
+    
+}
+
+
+.dmcards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* max-width: 1200px;  */
+    margin: 0 auto; /* Center the container */
+}
+
+
+.services-images{
+    margin-top: 0;
+    padding-top: 0;
+    height:200px ;
+    width: 200px;
+}
+
+.testimonial-container {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container */
+    /* Add any other necessary styles */
+  }
+
+  .rotate-card-front img{
+    height:100%;
+    width: 100%;
+}
+
+.rotate-card-back{
+    background-color: #393737;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border: 2px solid #f4efed;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+}
+
+.rotate-card{
+    color: #f1a8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 350px;
+    perspective: 1000px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.rotatecards-conteiner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* max-width: 1200px;  */
+    margin: 0 auto; /* Center the container */
+    background-color: #000028;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 15px;
+}
+.rotatecards-bg{
+    margin: 12rem 40rem 12rem 12rem;
+    background: #000 ;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    /* max-width: 1200px;  */
+    /* margin: 0 auto; Center the container */
+}
+
+.rotate-card-inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+    text-align: center;
+}
+
+.rotate-card:hover .rotate-card-inner{
+    transform: rotateY(180deg);
+}
+
+.rotate-card-front,
+.rotate-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.rotate-card-front{
+    background-color: #6A2C70;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border: 4px solid #f7f4f8;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(0deg);
+}
+
+/*Modification Our Focus */
+
+.ourfocus
+{
+    width: 50%;
+    margin: 20px 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid grey;
+}
+  @media (max-width: 767px) {
+    .testimonial-container {
+      max-width: 100%; /* Allow the container to take the full width on smaller screens */
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .rotate-card{
+        color: #f1a8f8;
+        width: 300px;
+        height: 250px;
+        perspective: 1000px;
+        padding: 10px;
+        margin: 8px;
+    }
+  }

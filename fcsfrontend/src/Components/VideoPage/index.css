@@ -1,0 +1,65 @@
+.video-background {
+  position: relative;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 70vh; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+.custom-content {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  transform: translate(-40%, -40%);
+  text-align: left; /* Center align content */
+  z-index: 1;
+  color: #fff; /* Adjust text color for visibility */
+}
+
+@media screen and (max-width: 770px) {
+  .custom-content {
+    /* top: 80%; Increase the top value for better positioning on mobile devices */
+    /* left: 50%; Center align content on mobile devices */
+    top: 52%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+  }
+  .home-page-content-container {
+    display: block; /* Display the content for mobile devices */
+  }
+  .home-page-paragraph{
+    color: #fff !important;
+    padding-top: 10px;
+  }
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* Adjust as needed */
+    overflow-x: hidden;
+  }
+  
+}
+
+/* Modifying the code */
+.learn-more-button
+{
+  padding: 10px 15px;
+  background-color: #fff;
+  color: black;
+  font-weight: 700;
+}

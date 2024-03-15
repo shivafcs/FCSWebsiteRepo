@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+.polarionimage {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.polarionContainer {
+  min-height: 100vh;
+  font-family: "Roboto";
+  font-size: 23px;
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+.polarioncardsContainer {
+  display: flex;
+
+  flex-direction: column;
+  padding: 15px;
+  justify-content: flex-start;
+  color: #3c464b;
+  outline: 2px solid gray;
+  background: #ffffff;
+}
+.polarionImageContainer:hover {
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2),
+    0 20px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+.polarioncardsContainer:hover {
+  /* box-shadow: 3px 3px red, -1em 0 .4em olive; */
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2),
+    0 20px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+.polarioncardsContainer {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+  height: 350px;
+  width: 350px;
+  border: 2px solid rgb(233, 231, 231);
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
+}
+
+.polarioncardsContainer.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+#polarionButton {
+  height: 45px;
+  width: 200px;
+  padding: 5px;
+  color: #fff;
+  font-family: Arial Regular;
+  background-color: #000029;
+  border: 2px solid rgb(233, 231, 231);
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
+  }
+
+.polarioniconContainer {
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  justify-self: flex-end;
+  background-color: #000029;
+}
+
+/* YourComponent.css */
+
+.plmvideoContainer {
+  position: relative;
+  background: greenDark;
+}
+
+.plm-container{
+  background: linear-gradient(#000028,#099)!important;
+  background-size: cover;
+  margin:0px;
+  padding: 0px;
+
+}
+
+.videoElement {
+  width: 100%;
+  height: 390px; /* Adjust this value based on your requirements */
+  object-fit: cover; /* Ensures the video covers the entire container */
+}
+
+#plmcontent {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: yellowgreen;
+  z-index: 1;
+  font-weight: 900;
+  top: 50%;
+  left: 50%;
+}
+
+@media (max-width: 991px) {
+  .center {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: left !important;
+  }
+}
+.plmpara {
+  font-size: 18px;
+  font-family: Arial Regular;
+  font-weight: "bold";
+}
+.plmhead {
+  font-size: 21px;
+}
