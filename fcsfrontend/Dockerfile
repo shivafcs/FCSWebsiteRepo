@@ -22,6 +22,9 @@ FROM httpd:alpine
 # Copy the build output from the builder stage to serve
 COPY --from=builder /app/build /usr/local/apache2/htdocs/
 
+# Copy the .htaccess file
+COPY .htaccess /usr/local/apache2/htdocs/
+
 # Expose port 80
 EXPOSE 80
 
@@ -31,5 +34,12 @@ RUN sed -i '/LoadModule rewrite_module/s/^#//g' /usr/local/apache2/conf/httpd.co
 # Set the AllowOverride directive to All for .htaccess support
 RUN sed -i '/<Directory "\/usr\/local\/apache2\/htdocs">/,/<\/Directory>/ s/AllowOverride None/AllowOverride All/' /usr/local/apache2/conf/httpd.conf
 
-# Create and copy the .htaccess file
-RUN echo "RewriteEngine On\nRewriteBase /\nRewriteRule ^index\.html$ - [L]\nRewriteCond %{REQUEST_FILENAME} !-f\nRewriteCond %{REQUEST_FILENAME} !-d\nRewriteRule . /index.html [L]" > /usr/local/apache2/htdocs/.htaccess
+# Remove default .htaccess file
+RUN rm /usr/local/apache2/htdocs/.htaccess
+
+# Set the working directory to Apache document root
+WORKDIR /usr/local/apache2/htdocs
+
+# Command to run Apache
+CMD ["httpd-foreground"]
+
