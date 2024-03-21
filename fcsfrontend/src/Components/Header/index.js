@@ -92,7 +92,7 @@ const Header = () => {
                 <ul className="dropdown-menu nav-card">
                   <li className="heading-color">
                     <Link className="dropdown-item heading-color-header" to="/plmPage">
-                    Polarian
+                    Polarion
                     </Link>
                   </li>
                   <li className="heading-color">
