@@ -32,7 +32,7 @@ const Footer = () => {
       <div className="fcs-card-container">
         <div>
           <h3 className="Heading-footer">FCS</h3>
-          <h5 className="Heading-footer-fcs">Faaliha Consulting Services</h5>
+          <h5 className="Heading-footer-fcs">Faalih Consulting Services</h5>
           <div>
             <a href="https://www.instagram.com/faalihservices99/"><FaInstagramSquare className="fcs-footer-icons-insta " /></a>
             <a href="https://www.facebook.com/profile.php?id=100077099258313"><FaFacebook className="fcs-footer-icons-facebook" /></a>
@@ -91,7 +91,7 @@ const Footer = () => {
       <div className="fcs-card-container">
         <div>
           <p className="Heading-footer">
-            &copy; 2023 Faaliha Consulting services
+            &copy; 2023 Faalih Consulting services
           </p>
         </div>
         <div className="fcs-footer-bottom-line">
