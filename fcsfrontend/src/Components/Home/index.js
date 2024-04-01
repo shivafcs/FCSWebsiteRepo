@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <div style={{ paddingTop: "50px" }}>
+      <div style={{ paddingTop: "0px" }}>
         <VideoPage />
         <div className="row  home-bg-top ">
           {/* <div className="col-12 col-md-7 home-page-content-container ">
@@ -84,6 +84,7 @@ const Home = () => {
           <div className="" >
             <Industries />
           </div>
+          
           <div className="home-clients" id="clients">
             <Card />
           </div>

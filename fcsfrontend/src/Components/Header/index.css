@@ -178,6 +178,7 @@ align-self: center;
   }
   .heading-colors {
     color: #fff !important;
+    padding-left: 15px;
     font-size: 14px;
     font-weight: 500;
     background-color: transparent;
@@ -299,12 +300,39 @@ align-self: center;
     width: 100%;
   }
   .nav-logo{
-    height: 20px;
-    width: 65px;
+    height: 35px;
+    width: 85px;
   }
   
   .fcsLogo-header {
   display: flex;
   align-self: center;    
     }
+}
+.mr-5
+  {
+  margin: 0px 30px;
+  }
+  @media only screen and (min-width: 985px) and (max-width: 1170px) {
+    /* CSS rules for screens with a width between 600px and 1200px */
+    .mr-5
+    {
+    margin: 0px 10px;
+    }
+    .heading-colors
+    {
+      padding: 5px;
+    }
+   
+  }
+  .collapsed
+{
+  height: 60px;
+}
+@media  screen and (min-width: 985px)
+{
+  .fixed-top
+  {
+    height: 90px;
+  }
 }

@@ -39,7 +39,7 @@ export default function AboutUs() {
   return (
     <>
     <Header/>
-    <div className="aboutusContainer" style={{ paddingTop: "70px" }}>
+    <div className="aboutusContainer" style={{ paddingTop: "0px" }}>
       <div className="aboutusDetailsContainer p-3">
         <div className="detailsContainer p-5">
           <h1 className="text-white">FCS |Faalih Consultancy Services|</h1>
